@@ -1,22 +1,22 @@
 
-# StepFi-Web
+# Stellar-Lendify
 
-[![CI](https://github.com/StepFi-app/StepFi-Web/actions/workflows/ci.yml/badge.svg)](https://github.com/StepFi-app/StepFi-Web/actions/workflows/ci.yml)
+[![CI](https://github.com/Lendify-Onchain-Org/Stellar-Lendify/actions/workflows/ci.yml/badge.svg)](https://github.com/Lendify-Onchain-Org/Stellar-Lendify/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-The web application for the StepFi protocol. Built for sponsors, vendors, and mentors, the three participants who keep the StepFi lending pool running on Stellar.
+The web application for the Stellar Lendify protocol. Built for sponsors, vendors, and mentors, the three participants who keep the Stellar Lendify lending pool running on Stellar.
 
-**Live:** https://stepfi-web.netlify.app
+**Live:** https://stellar-lendify.netlify.app
 
 ---
 
 ## What this app is for
 
-StepFi is an open-source Buy Now Pay Later protocol on Stellar. Learners use a separate mobile app (StepFi-App) to apply for credit and repay installments. StepFi-Web is the desktop-facing side of the same protocol, built for the people who fund it, list products on it, and vouch for the learners using it.
+Stellar Lendify is an open-source Buy Now Pay Later protocol on Stellar. Learners use a separate mobile app (Stellar-Lendify-App) to apply for credit and repay installments. Stellar-Lendify is the desktop-facing side of the same protocol, built for the people who fund it, list products on it, and vouch for the learners using it.
 
 ### Sponsors
 
-Sponsors deposit USDC into the StepFi liquidity pool. That capital funds approved learner loans. As learners repay with interest, the pool grows and sponsor shares increase in value. Sponsors can withdraw their position plus earned yield at any time.
+Sponsors deposit USDC into the Stellar Lendify liquidity pool. That capital funds approved learner loans. As learners repay with interest, the pool grows and sponsor shares increase in value. Sponsors can withdraw their position plus earned yield at any time.
 
 From the web app, a sponsor can:
 
@@ -32,7 +32,7 @@ From the web app, a sponsor can:
 
 ### Vendors
 
-Vendors are the schools, bootcamps, electronics retailers, and tool providers that learners buy from. When a loan is approved, the vendor gets paid upfront in full. The learner repays StepFi in installments, not the vendor directly.
+Vendors are the schools, bootcamps, electronics retailers, and tool providers that learners buy from. When a loan is approved, the vendor gets paid upfront in full. The learner repays Stellar Lendify in installments, not the vendor directly.
 
 From the web app, a vendor can:
 
@@ -56,23 +56,23 @@ From the web app, a mentor can:
 
 ---
 
-## How this fits into the StepFi ecosystem
+## How this fits into the Stellar Lendify ecosystem
 
 <div align="center">
 
-<img src="./public/architecture.svg" alt="StepFi system architecture — StepFi-Web highlighted" width="900" />
+<img src="./public/architecture.svg" alt="Stellar Lendify system architecture — Stellar-Lendify highlighted" width="900" />
 
 </div>
 
-StepFi is split across multiple repositories that together form one protocol:
+Stellar Lendify is split across multiple repositories that together form one protocol:
 
 | Repo | Purpose | Stack |
 |--------|---------|--------|
-| [StepFi-Contracts](https://github.com/StepFi-app/StepFi-Contracts) | On-chain logic: credit line, reputation, liquidity pool, vendor registry, parameters | Rust, Soroban |
-| [StepFi-API](https://github.com/StepFi-app/StepFi-API) | Off-chain orchestration: auth, loan building, indexing, background jobs | NestJS, Fastify, Supabase |
-| [StepFi-App](https://github.com/StepFi-app/StepFi-App) | Mobile app for learners: apply for credit, repay installments, build reputation | React Native, Expo |
-| **StepFi-Web** | This repository. Web app for sponsors, vendors, and mentors | Vite, React, TypeScript |
-| [StepFi-Docs](https://github.com/StepFi-app/StepFi-Docs) | Full protocol documentation | docs.page |
+| [Stellar-Lendify-Contracts](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Contracts) | On-chain logic: credit line, reputation, liquidity pool, vendor registry, parameters | Rust, Soroban |
+| [Stellar-Lendify-API](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-API) | Off-chain orchestration: auth, loan building, indexing, background jobs | NestJS, Fastify, Supabase |
+| [Stellar-Lendify-App](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-App) | Mobile app for learners: apply for credit, repay installments, build reputation | React Native, Expo |
+| **Stellar-Lendify** | This repository. Web app for sponsors, vendors, and mentors | Vite, React, TypeScript |
+| [Stellar-Lendify-Docs](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Docs) | Full protocol documentation | docs.page |
 
 All five repositories talk to the same live API and the same five Soroban contracts deployed on Stellar testnet.
 
@@ -84,13 +84,13 @@ A deposit made here shows up in the mobile app's loan funding. A vouch submitted
 
 | Resource | Link |
 |-----------|------|
-| StepFi-Web | https://stepfi-web.netlify.app |
-| Landing Page | https://stepfi.vercel.app |
-| API | https://stepfi-api.onrender.com/api/v1 |
-| API Docs (Swagger) | https://stepfi-api.onrender.com/api/v1/docs |
-| Full Documentation | https://docs.page/StepFi-app/StepFi-Docs |
-| Interactive Demo | https://stepfi.vercel.app/demo |
-| API Playground | https://stepfi.vercel.app/playground |
+| Stellar-Lendify | https://stellar-lendify.netlify.app |
+| Landing Page | https://stellar-lendify.vercel.app |
+| API | https://stellar-lendify-api.onrender.com/api/v1 |
+| API Docs (Swagger) | https://stellar-lendify-api.onrender.com/api/v1/docs |
+| Full Documentation | https://docs.page/Lendify-Onchain-Org/Stellar-Lendify-Docs |
+| Interactive Demo | https://stellar-lendify.vercel.app/demo |
+| API Playground | https://stellar-lendify.vercel.app/playground |
 
 ---
 
@@ -108,7 +108,7 @@ Verified via SHA256 hash comparison.
 
 Full release with WASM artifacts:
 
-- https://github.com/StepFi-app/StepFi-Contracts/releases/tag/v1.0.0
+- https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Contracts/releases/tag/v1.0.0
 
 ---
 
@@ -175,14 +175,14 @@ Every push and PR runs [`.github/workflows/ci.yml`](.github/workflows/ci.yml) �
 | Wallet connect (Freighter) + TanStack Query data layer | ✅ |
 | Enforced CI gate (lint · type-check · test · build) | ✅ |
 | Accessibility test pass (`test:a11y`) | ✅ |
-| Live wallet-signature JWT auth (shared with StepFi-App) | 🚧 |
+| Live wallet-signature JWT auth (shared with Stellar-Lendify-App) | 🚧 |
 | Editable sponsor/vendor profiles · notification preferences | 🗺️ |
 
 ---
 
 ## Contributing
 
-StepFi-Web is open source and welcomes contributors of all experience levels.
+Stellar-Lendify is open source and welcomes contributors of all experience levels.
 
 ### Before you start
 
@@ -200,7 +200,7 @@ StepFi-Web is open source and welcomes contributors of all experience levels.
 
 ### Earn rewards for contributions
 
-StepFi is live on Grantfox, an open-source collaboration hub in the Stellar ecosystem.
+Stellar Lendify is live on Grantfox, an open-source collaboration hub in the Stellar ecosystem.
 
 Every merged PR earns transparent Stellar rewards.
 
@@ -212,9 +212,9 @@ Create an account:
 
 https://contribute.grantfox.xyz/join?ref=EmeditWeb
 
-Browse StepFi issues:
+Browse Stellar Lendify issues:
 
-https://contribute.grantfox.xyz/org/StepFi-app
+https://contribute.grantfox.xyz/org/Lendify-Onchain-Org
 
 ---
 

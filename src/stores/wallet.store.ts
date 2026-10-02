@@ -25,6 +25,6 @@ export const useWalletStore = create<WalletStore>()(
           isConnected: false,
         }),
     }),
-    { name: 'stepfi-wallet' }
+    { name: 'stellar-lendify-wallet' }
   )
 )

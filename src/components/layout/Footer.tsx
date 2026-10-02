@@ -20,7 +20,7 @@ export function Footer() {
               rx="1.5" fill={colors.logo.green}/>
           </svg>
           <span className="font-display font-bold text-text-primary">
-            StepFi
+            Stellar Lendify
           </span>
           <span className="text-text-muted text-sm">
             © 2026 · MIT License · Built for Stellar
@@ -29,14 +29,14 @@ export function Footer() {
         <nav aria-label="Footer navigation">
           <div className="flex items-center gap-4 text-sm
             text-text-muted">
-            <a href="https://github.com/StepFi-app"
+            <a href="https://github.com/Lendify-Onchain-Org"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-brand transition-colors"
               aria-label="GitHub (opens in new tab)">
               GitHub
             </a>
-            <a href="https://stepfi.vercel.app/docs"
+            <a href="https://stellar-lendify.vercel.app/docs"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-brand transition-colors"
@@ -47,7 +47,7 @@ export function Footer() {
               className="hover:text-brand transition-colors">
               Contracts
             </Link>
-            <a href="https://contribute.grantfox.xyz/org/StepFi-app"
+            <a href="https://contribute.grantfox.xyz/org/Lendify-Onchain-Org"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-brand transition-colors"

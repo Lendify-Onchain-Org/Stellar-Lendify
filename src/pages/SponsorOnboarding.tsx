@@ -78,7 +78,7 @@ function StepWelcome({ onNext }: { onNext: () => void }) {
         Welcome to the Sponsor Pool
       </h1>
       <p className="text-text-secondary leading-relaxed mb-3">
-        StepFi connects sponsors like you with verified learners who need
+        Stellar Lendify connects sponsors like you with verified learners who need
         affordable financing for education, tools, and career growth.
       </p>
       <p className="text-text-secondary leading-relaxed mb-8">
@@ -96,7 +96,7 @@ function StepWelcome({ onNext }: { onNext: () => void }) {
 const risks = [
   {
     title: 'Default Risk',
-    body: 'Learners may fail to repay their loans. While StepFi uses on-chain reputation scores to vet borrowers, past performance does not guarantee future results. Defaults reduce pool returns and may impact principal.',
+    body: 'Learners may fail to repay their loans. While Stellar Lendify uses on-chain reputation scores to vet borrowers, past performance does not guarantee future results. Defaults reduce pool returns and may impact principal.',
     severity: 'high',
   },
   {
@@ -111,7 +111,7 @@ const risks = [
   },
   {
     title: 'Protocol Risk',
-    body: 'StepFi is an early-stage protocol. The platform, its smart contracts, and its business model may change or be discontinued. There is no guarantee of continued operation or future returns.',
+    body: 'Stellar Lendify is an early-stage protocol. The platform, its smart contracts, and its business model may change or be discontinued. There is no guarantee of continued operation or future returns.',
     severity: 'high',
   },
 ]
@@ -189,7 +189,7 @@ function StepPoolHealth({ onNext }: { onNext: () => void }) {
           Current Pool Health
         </h2>
         <p className="text-text-secondary text-sm">
-          Real-time metrics from the StepFi liquidity pool.
+          Real-time metrics from the Stellar Lendify liquidity pool.
         </p>
       </div>
 

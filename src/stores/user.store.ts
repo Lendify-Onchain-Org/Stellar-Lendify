@@ -30,6 +30,6 @@ export const useUserStore = create<UserStore>()(
         })
       },
     }),
-    { name: 'stepfi-user' }
+    { name: 'stellar-lendify-user' }
   )
 )

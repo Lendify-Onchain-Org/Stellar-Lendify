@@ -1,9 +1,9 @@
-# StepFi-Web Architecture
+# Stellar-Lendify Architecture
 
 ## What this is
-React TypeScript web app for the StepFi protocol.
+React TypeScript web app for the Stellar Lendify protocol.
 Targets sponsors and desktop users primarily.
-Shares the same API as StepFi-App (React Native).
+Shares the same API as Stellar-Lendify-App (React Native).
 
 ## Stack
 - Vite + React 19 + TypeScript
@@ -24,6 +24,6 @@ Shares the same API as StepFi-App (React Native).
 - Every page needs loading, error, and empty states
 
 ## API
-Base URL: https://stepfi-api.onrender.com/api/v1
+Base URL: https://stellar-lendify-api.onrender.com/api/v1
 Auth: JWT Bearer token stored in localStorage
 Wallet: Freighter browser extension

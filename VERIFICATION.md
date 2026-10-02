@@ -1,6 +1,6 @@
 # Contract Verification
 
-This document provides the SHA256 hashes of the compiled Soroban smart contracts for the StepFi protocol. You can use these hashes to verify that the on-chain bytecode matches the source code published in the [StepFi-Contracts](https://github.com/StepFi-app/StepFi-Contracts) repository.
+This document provides the SHA256 hashes of the compiled Soroban smart contracts for the Stellar Lendify protocol. You can use these hashes to verify that the on-chain bytecode matches the source code published in the [Stellar-Lendify-Contracts](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Contracts) repository.
 
 The hashes below are the **on-chain wasm hashes** of the live contracts
 (deployer `GCOYDYSEHRCFWGXUCMPSQ3ODEY2LGMBSVKKCOFH4NRIK4DEEDSETH7BF`), last
@@ -41,8 +41,8 @@ Compare each hash with the table above.
 ### Method B — reproducible build from source
 
 ```bash
-git clone https://github.com/StepFi-app/StepFi-Contracts.git
-cd StepFi-Contracts
+git clone https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Contracts.git
+cd Stellar-Lendify-Contracts
 stellar contract build
 stellar contract optimize --wasm target/**/release/<contract>.wasm
 sha256sum target/**/release/*.optimized.wasm
@@ -51,4 +51,4 @@ sha256sum target/**/release/*.optimized.wasm
 The **deployed bytecode is the optimized wasm** (`.optimized.wasm`), not the raw
 build output. If Method B diverges due to toolchain drift, Method A is
 authoritative. See the canonical copy in
-[StepFi-Contracts/VERIFICATION.md](https://github.com/StepFi-app/StepFi-Contracts/blob/main/VERIFICATION.md).
+[Stellar-Lendify-Contracts/VERIFICATION.md](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Contracts/blob/main/VERIFICATION.md).

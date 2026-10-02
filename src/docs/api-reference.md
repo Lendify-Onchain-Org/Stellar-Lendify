@@ -1,9 +1,9 @@
 # API Reference
 
-The StepFi REST API provides programmatic access to all protocol features. The base URL is:
+The Stellar Lendify REST API provides programmatic access to all protocol features. The base URL is:
 
 ```
-https://stepfi-api.onrender.com/api/v1
+https://stellar-lendify-api.onrender.com/api/v1
 ```
 
 ## Authentication
@@ -25,7 +25,7 @@ Include the token in subsequent requests:
 
 ```bash
 curl -H "Authorization: Bearer YOUR_JWT_TOKEN" \
-  https://stepfi-api.onrender.com/api/v1/pool/info
+  https://stellar-lendify-api.onrender.com/api/v1/pool/info
 ```
 
 ## Endpoints

@@ -1,12 +1,12 @@
 # For Vendors
 
-Vendors list their products on StepFi and get paid upfront. Learners repay in installments — you never chase payments.
+Vendors list their products on Stellar Lendify and get paid upfront. Learners repay in installments — you never chase payments.
 
 ## How It Works
 
 1. **Register as a vendor** — Submit your business details for verification
 2. **List your products** — Add laptops, courses, dev tools, and other learning resources
-3. **Get paid upfront** — When a learner purchases through StepFi, you receive full payment immediately
+3. **Get paid upfront** — When a learner purchases through Stellar Lendify, you receive full payment immediately
 4. **Track everything** — Monitor loans, payments, and products from your dashboard
 
 ## Registering as a Vendor
@@ -27,7 +27,7 @@ Navigate to `/vendors/register` and submit the form. Our team will review your a
 Once approved, you can list products through the vendor dashboard or API:
 
 ```bash
-curl -X POST https://stepfi-api.onrender.com/api/v1/vendors/products \
+curl -X POST https://stellar-lendify-api.onrender.com/api/v1/vendors/products \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
@@ -68,7 +68,7 @@ console.log(`Key: ${apiKey.key}`)
 
 ## Product Categories
 
-StepFi supports a wide range of learning-related products:
+Stellar Lendify supports a wide range of learning-related products:
 
 - Electronics (laptops, tablets, monitors)
 - Online courses & bootcamps

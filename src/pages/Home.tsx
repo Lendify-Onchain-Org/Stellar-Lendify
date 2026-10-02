@@ -25,8 +25,8 @@ import { poolService } from '../services/pool.service'
 const STELLAR_EXPERT_CONTRACT =
   'https://stellar.expert/explorer/testnet/contract'
 
-const APP_DOWNLOAD_URL = 'https://expo.dev/accounts/stepfi-app'
-const GITHUB_ORG_URL = 'https://github.com/StepFi-app'
+const APP_DOWNLOAD_URL = 'https://expo.dev/accounts/lendify-onchain-org'
+const GITHUB_ORG_URL = 'https://github.com/Lendify-Onchain-Org'
 
 const ACCENT = {
   learner: colors.brandBlue,
@@ -145,7 +145,7 @@ const participants: Participant[] = [
     icon: Building,
     title: 'Sponsor',
     accent: ACCENT.sponsor,
-    body: 'Individuals, companies, and DAOs that deposit USDC into the StepFi liquidity pool. The pool funds approved learner loans. Sponsors earn yield from interest paid by learners and can withdraw at any time.',
+    body: 'Individuals, companies, and DAOs that deposit USDC into the Stellar Lendify liquidity pool. The pool funds approved learner loans. Sponsors earn yield from interest paid by learners and can withdraw at any time.',
     tag: 'You are here',
     cta: 'Sponsor the Pool',
     href: '/sponsors',
@@ -164,7 +164,7 @@ const participants: Participant[] = [
 ]
 
 const sponsorBenefits = [
-  'Deposit USDC to the StepFi liquidity pool',
+  'Deposit USDC to the Stellar Lendify liquidity pool',
   'Your capital funds approved learner loans',
   'Earn APY from interest on repayments',
   'Withdraw anytime with earned yield',
@@ -183,12 +183,12 @@ const vendorBenefits: Benefit[] = [
   {
     icon: DollarSign,
     title: 'Get paid upfront',
-    body: 'You receive full payment immediately. The learner repays StepFi in installments. You never chase payments.',
+    body: 'You receive full payment immediately. The learner repays Stellar Lendify in installments. You never chase payments.',
   },
   {
     icon: Users,
     title: 'Reach motivated buyers',
-    body: 'StepFi learners are developers and students actively investing in their growth. They buy laptops, courses, and dev tools.',
+    body: 'Stellar Lendify learners are developers and students actively investing in their growth. They buy laptops, courses, and dev tools.',
   },
   {
     icon: Shield,
@@ -233,9 +233,9 @@ const footerColumns = [
     title: 'Protocol',
     links: [
       { label: 'Docs', href: '/docs', internal: true },
-      { label: 'Demo', href: 'https://stepfi.vercel.app/demo' },
-      { label: 'Playground', href: 'https://stepfi.vercel.app/playground' },
-      { label: 'API Docs', href: 'https://stepfi.vercel.app/api' },
+      { label: 'Demo', href: 'https://stellar-lendify.vercel.app/demo' },
+      { label: 'Playground', href: 'https://stellar-lendify.vercel.app/playground' },
+      { label: 'API Docs', href: 'https://stellar-lendify.vercel.app/api' },
     ],
   },
   {
@@ -243,7 +243,7 @@ const footerColumns = [
     links: [
       { label: 'GitHub', href: GITHUB_ORG_URL },
       { label: 'Grantfox', href: GRANTFOX_URL },
-      { label: 'Discord', href: 'https://discord.gg/stepfi' },
+      { label: 'Discord', href: 'https://discord.gg/stellar-lendify' },
     ],
   },
   {
@@ -259,7 +259,7 @@ const footerColumns = [
       },
       {
         label: 'v1.0.0 Release',
-        href: 'https://github.com/StepFi-app/StepFi-Web/releases',
+        href: 'https://github.com/Lendify-Onchain-Org/Stellar-Lendify/releases',
       },
     ],
   },
@@ -306,7 +306,7 @@ function HeroSection() {
           transition={{ duration: 0.6, delay: 0.12 }}
           className="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto mb-10"
         >
-          StepFi is an open-source BNPL protocol built on Soroban.
+          Stellar Lendify is an open-source BNPL protocol built on Soroban.
           Sponsors fund a liquidity pool. Vendors list their products.
           Learners get credit without banks. Every repayment builds
           on-chain reputation.
@@ -365,7 +365,7 @@ function ParticipantsSection() {
     <Section>
       <SectionHeader
         title="One protocol. Three participants."
-        subtitle="StepFi connects sponsors, vendors, and learners through Soroban smart contracts on Stellar."
+        subtitle="Stellar Lendify connects sponsors, vendors, and learners through Soroban smart contracts on Stellar."
       />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {participants.map((p) => (
@@ -592,7 +592,7 @@ function VendorsSection() {
     <Section>
       <SectionHeader
         title="Reach learners who are ready to buy."
-        subtitle="List your products on StepFi and get paid upfront while learners repay in installments."
+        subtitle="List your products on Stellar Lendify and get paid upfront while learners repay in installments."
       />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         {vendorBenefits.map((benefit) => (
@@ -733,7 +733,7 @@ function ContractsSection() {
     <Section>
       <SectionHeader
         title="Transparent by design."
-        subtitle="Every StepFi operation runs through open-source Soroban contracts on Stellar testnet. Read the code. Verify the hashes."
+        subtitle="Every Stellar Lendify operation runs through open-source Soroban contracts on Stellar testnet. Read the code. Verify the hashes."
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {contracts.map((contract) => (

@@ -2,7 +2,7 @@ import { api } from './api'
 import type { VouchRequest, ActiveVouch, VouchResponse } from '../types'
 
 /**
- * Backend DTO shapes (StepFi-API vouching module). The frontend view models
+ * Backend DTO shapes (Stellar-Lendify-API vouching module). The frontend view models
  * (VouchRequest / ActiveVouch) are richer than the API currently returns, so we
  * map defensively here — filling fields the API does not track with safe
  * defaults so the UI renders without runtime errors.

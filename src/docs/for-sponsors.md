@@ -1,10 +1,10 @@
 # For Sponsors
 
-Sponsors deposit USDC into the StepFi liquidity pool. Your capital funds verifiable learner loans and earns yield from interest payments.
+Sponsors deposit USDC into the Stellar Lendify liquidity pool. Your capital funds verifiable learner loans and earns yield from interest payments.
 
 ## How It Works
 
-1. **Deposit USDC** — Send USDC to the StepFi liquidity pool smart contract
+1. **Deposit USDC** — Send USDC to the Stellar Lendify liquidity pool smart contract
 2. **Capital is deployed** — Your deposit is pooled with other sponsors to fund approved learner loans
 3. **Earn yield** — Interest paid by learners is distributed proportionally to all sponsors
 4. **Withdraw anytime** — Redeem your pool shares for USDC plus earned yield

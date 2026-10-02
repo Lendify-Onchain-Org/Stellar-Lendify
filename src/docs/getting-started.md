@@ -1,6 +1,6 @@
 # Getting Started
 
-This guide walks you through setting up StepFi for development and contributing to the project.
+This guide walks you through setting up Stellar Lendify for development and contributing to the project.
 
 ## Prerequisites
 
@@ -12,8 +12,8 @@ This guide walks you through setting up StepFi for development and contributing 
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/StepFi-app/StepFi-Web.git
-cd StepFi-Web
+git clone https://github.com/Lendify-Onchain-Org/Stellar-Lendify.git
+cd Stellar-Lendify
 ```
 
 ## Install Dependencies
@@ -30,10 +30,10 @@ Copy the example environment file:
 cp .env.example .env
 ```
 
-The default values point to the StepFi testnet API:
+The default values point to the Stellar Lendify testnet API:
 
 ```env
-VITE_API_BASE_URL=https://stepfi-api.onrender.com/api/v1
+VITE_API_BASE_URL=https://stellar-lendify-api.onrender.com/api/v1
 VITE_STELLAR_NETWORK=TESTNET
 ```
 

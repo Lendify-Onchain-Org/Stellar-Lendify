@@ -3,7 +3,7 @@ import type { QueryClient } from '@tanstack/react-query'
 /**
  * Canonical Query Key Factory
  *
- * All React Query keys across StepFi-Web must be declared here using hierarchical arrays.
+ * All React Query keys across Stellar-Lendify must be declared here using hierarchical arrays.
  * This guarantees key consistency across services, pages, and components, and ensures
  * that mutation invalidations accurately target affected query subtrees.
  *
