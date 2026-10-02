@@ -1,100 +1,155 @@
+# Stellar Lendify - Decentralized Buy Now Pay Later on Stellar
 
-# Stellar-Lendify
-
+[![React](https://img.shields.io/badge/React-18-blue.svg)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+[![Soroban](https://img.shields.io/badge/Soroban-Compatible-blue.svg)](https://soroban.stellar.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![CI](https://github.com/Lendify-Onchain-Org/Stellar-Lendify/actions/workflows/ci.yml/badge.svg)](https://github.com/Lendify-Onchain-Org/Stellar-Lendify/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-The web application for the Stellar Lendify protocol. Built for sponsors, vendors, and mentors, the three participants who keep the Stellar Lendify lending pool running on Stellar.
+Stellar Lendify is an open-source Buy Now Pay Later (BNPL) protocol on the Stellar blockchain. This repository houses the desktop-facing web application built for the sponsors, vendors, and mentors who keep the lending pool running. It provides a comprehensive interface for funding the protocol, listing products, and vouching for learners, securely interacting with Soroban smart contracts on the Stellar network.
 
-**Live:** https://stellar-lendify.netlify.app
-
----
-
-## What this app is for
-
-Stellar Lendify is an open-source Buy Now Pay Later protocol on Stellar. Learners use a separate mobile app (Stellar-Lendify-App) to apply for credit and repay installments. Stellar-Lendify is the desktop-facing side of the same protocol, built for the people who fund it, list products on it, and vouch for the learners using it.
-
-### Sponsors
-
-Sponsors deposit USDC into the Stellar Lendify liquidity pool. That capital funds approved learner loans. As learners repay with interest, the pool grows and sponsor shares increase in value. Sponsors can withdraw their position plus earned yield at any time.
-
-From the web app, a sponsor can:
-
-- View live pool stats:
-  - Total deposits
-  - Available liquidity
-  - Locked liquidity
-  - Current APY
-- Deposit USDC and receive pool shares
-- Track position value and earned yield over time
-- See which active loans their capital is backing
-- Withdraw shares for USDC plus yield
-
-### Vendors
-
-Vendors are the schools, bootcamps, electronics retailers, and tool providers that learners buy from. When a loan is approved, the vendor gets paid upfront in full. The learner repays Stellar Lendify in installments, not the vendor directly.
-
-From the web app, a vendor can:
-
-- Register their business and get approved into the protocol
-- List products and services available for financing
-- Track loans tied to their catalog
-- See payment history and total volume received
-- Generate API keys for programmatic integration
-
-### Mentors
-
-Mentors are senior developers with strong on-chain reputation. A mentor can vouch for a learner they trust, which boosts that learner's reputation score and unlocks lower interest rates and higher credit limits. If the learner defaults, the mentor's own reputation takes a hit, so vouching means something.
-
-From the web app, a mentor can:
-
-- Review vouch requests from learners
-- View a learner's public profile and reputation history before vouching
-- Submit a vouch with their wallet signature
-- Track active vouches and their expiry
-- Revoke a vouch if needed
+**Live Application:** [https://stellar-lendify.netlify.app](https://stellar-lendify.netlify.app)
 
 ---
 
-## How this fits into the Stellar Lendify ecosystem
+## Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Setup Instructions](#-setup-instructions)
+  - [Prerequisites](#-prerequisites)
+  - [Quick Start](#-quick-start)
+  - [Environment Setup](#-environment-setup)
+  - [Running Tests](#-running-tests)
+- [Features](#-features)
+- [Ecosystem Architecture](#-ecosystem-architecture)
+- [Deployed Contracts](#-deployed-contracts)
+- [Live Deployments](#-live-deployments)
+- [CI/CD Pipeline](#-cicd-pipeline)
+- [Helpful Links](#-helpful-links)
+- [Contribution Guidelines](#-contribution-guidelines)
+- [License](#-license)
+- [Support](#-support)
+
+---
+
+## Project Overview
+
+While learners use a separate mobile app to apply for credit and repay installments, this web application is designed for the liquidity providers, merchants, and reputation validators of the Stellar Lendify ecosystem.
+
+### Key Benefits
+
+| Benefit | Description |
+|---------|-------------|
+| **Trustless Yield** | Sponsors earn algorithmic yield from real-world lending activities |
+| **Upfront Payments** | Vendors get paid immediately while learners repay in installments |
+| **On-Chain Reputation** | Mentors can cryptographically vouch for trusted developers |
+| **Complete Transparency**| All loans, pool stats, and credit lines are verifiable on Stellar |
+| **Open Ecosystem** | Modular protocol architecture with programmatic API access |
+
+### Target Users
+
+- **Sponsors**: Individuals, companies, and DAOs that deposit USDC into the liquidity pool to fund loans and earn yield.
+- **Vendors**: Bootcamps, electronics retailers, and dev tool providers that list products for learners to finance.
+- **Mentors**: Senior developers who vouch for junior developers to boost their on-chain reputation and credit limits.
+
+---
+
+## Setup Instructions
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **Node.js 18+** - [Install Node.js](https://nodejs.org/)
+- **npm** or **yarn** - Package manager
+- **Git** - For version control
+
+### Quick Start
+
+Get up and running in under 2 minutes:
+
+```bash
+# Clone the repository
+git clone https://github.com/Lendify-Onchain-Org/Stellar-Lendify.git
+cd Stellar-Lendify
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+### Environment Setup
+
+The application runs against the live testnet API by default. No local backend setup is required to start contributing. 
+
+If you need to connect to a local backend, create a `.env` file or set the variable inline:
+
+```bash
+VITE_API_BASE_URL=http://localhost:3000/api/v1 npm run dev
+```
+
+### Running Tests
+
+Ensure everything is working correctly with our test suites:
+
+```bash
+# Run unit and component tests once
+npm test
+
+# Run tests with a coverage report
+npm run test:coverage
+
+# Build and run accessibility checks
+npm run test:a11y
+
+# Lint the codebase
+npm run lint
+```
+
+---
+
+## Features
+
+### 🏦 For Sponsors
+- **Live Pool Dashboard:** View total deposits, available/locked liquidity, and current APY.
+- **Deposit & Withdraw:** Deposit USDC for pool shares and withdraw shares plus earned yield at any time.
+- **Portfolio Tracking:** Track position value, earned yield, and view which active loans your capital is backing.
+
+### 🏪 For Vendors
+- **Business Onboarding:** Register your business and get approved into the protocol.
+- **Catalog Management:** List products and services available for financing.
+- **Analytics & Tracking:** Track loans tied to your catalog, view payment history, and monitor total volume received.
+
+### 🤝 For Mentors
+- **Vouching System:** Review vouch requests from learners and view their public profile/reputation history.
+- **Cryptographic Signatures:** Submit vouches securely using a wallet signature.
+- **Vouch Management:** Track active vouches, their expiry, and revoke vouches if necessary.
+
+---
+
+## Ecosystem Architecture
 
 <div align="center">
-
-<img src="./public/architecture.svg" alt="Stellar Lendify system architecture — Stellar-Lendify highlighted" width="900" />
-
+  <img src="./public/architecture.svg" alt="Stellar Lendify System Architecture" width="900" />
 </div>
 
-Stellar Lendify is split across multiple repositories that together form one protocol:
+Stellar Lendify is split across multiple repositories that together form one unified protocol. All repositories talk to the same live API and Soroban contracts.
 
-| Repo | Purpose | Stack |
+| Repository | Purpose | Tech Stack |
 |--------|---------|--------|
-| [Stellar-Lendify-Contracts](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Contracts) | On-chain logic: credit line, reputation, liquidity pool, vendor registry, parameters | Rust, Soroban |
-| [Stellar-Lendify-API](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-API) | Off-chain orchestration: auth, loan building, indexing, background jobs | NestJS, Fastify, Supabase |
-| [Stellar-Lendify-App](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-App) | Mobile app for learners: apply for credit, repay installments, build reputation | React Native, Expo |
-| **Stellar-Lendify** | This repository. Web app for sponsors, vendors, and mentors | Vite, React, TypeScript |
+| **[Stellar-Lendify](https://github.com/Lendify-Onchain-Org/Stellar-Lendify)** | **This repo. Web app for sponsors, vendors, and mentors.** | **Vite, React, TypeScript** |
+| [Stellar-Lendify-Contracts](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Contracts) | On-chain logic: credit line, reputation, liquidity pool, vendor registry | Rust, Soroban |
+| [Stellar-Lendify-API](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-API) | Off-chain orchestration: auth, loan building, background jobs | NestJS, Fastify, Supabase |
+| [Stellar-Lendify-App](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-App) | Mobile app for learners: apply for credit, repay installments | React Native, Expo |
 | [Stellar-Lendify-Docs](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Docs) | Full protocol documentation | docs.page |
 
-All five repositories talk to the same live API and the same five Soroban contracts deployed on Stellar testnet.
-
-A deposit made here shows up in the mobile app's loan funding. A vouch submitted here affects a learner's reputation score wherever it's checked.
-
 ---
 
-## Live Deployments
+## Deployed Contracts
 
-| Resource | Link |
-|-----------|------|
-| Stellar-Lendify | https://stellar-lendify.netlify.app |
-| Landing Page | https://stellar-lendify.vercel.app |
-| API | https://stellar-lendify-api.onrender.com/api/v1 |
-| API Docs (Swagger) | https://stellar-lendify-api.onrender.com/api/v1/docs |
-| Full Documentation | https://docs.page/Lendify-Onchain-Org/Stellar-Lendify-Docs |
-| Interactive Demo | https://stellar-lendify.vercel.app/demo |
-| API Playground | https://stellar-lendify.vercel.app/playground |
-
----
-
-## Deployed Contracts (Stellar Testnet)
+The protocol operates through five core Soroban smart contracts deployed on the **Stellar Testnet**.
 
 | Contract | Contract ID |
 |------------|------------|
@@ -104,120 +159,88 @@ A deposit made here shows up in the mobile app's loan funding. A vouch submitted
 | Vendor Registry | `CCZ6T6NYCDNI26VGTPXKKWQDR7JCIZZ24LCEG4MMYHZJAG6BPWIVAU2L` |
 | Parameters | `CCAE72SKYX55C5L56DBEFIMFVXRUIJY6JYLBREHEWRFNOW7AX5NBIJ5B` |
 
-Verified via SHA256 hash comparison.
-
-Full release with WASM artifacts:
-
-- https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Contracts/releases/tag/v1.0.0
+> *Verified via SHA256 hash comparison. Full release with WASM artifacts available [here](https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Contracts/releases/tag/v1.0.0).*
 
 ---
 
-## Tech Stack
+## Live Deployments
 
-- Vite
-- React 18
-- TypeScript
-- Tailwind CSS
-- Zustand
-- TanStack Query
-- Freighter API
-- Stellar SDK
-
----
-
-## Getting Started
-
-### Install dependencies
-
-```bash
-npm install
-````
-
-### Start development server
-
-```bash
-npm run dev
-```
-
-The app runs against the live testnet API by default. To use a different backend, set `VITE_API_BASE_URL`:
-
-```bash
-VITE_API_BASE_URL=http://localhost:3000/api/v1 npm run dev
-```
-
-No local backend setup is required to start contributing to the frontend.
+| Resource | Link |
+|-----------|------|
+| Web App (Sponsors/Vendors) | https://stellar-lendify.netlify.app |
+| Landing Page | https://stellar-lendify.vercel.app |
+| Interactive Demo | https://stellar-lendify.vercel.app/demo |
+| Backend API | https://stellar-lendify-api.onrender.com/api/v1 |
+| API Docs (Swagger) | https://stellar-lendify-api.onrender.com/api/v1/docs |
+| API Playground | https://stellar-lendify.vercel.app/playground |
+| Full Documentation | https://docs.page/Lendify-Onchain-Org/Stellar-Lendify-Docs |
 
 ---
 
-## Scripts
+## CI/CD Pipeline
 
-| Command | What it does |
-|---------|--------------|
-| `npm run dev` | Start the Vite dev server |
-| `npm run build` | Type-check (`tsc -b`) and produce a production build |
-| `npm run preview` | Preview the production build locally |
-| `npm run lint` | Lint with ESLint |
-| `npm test` | Run the Vitest suite once |
-| `npm run test:coverage` | Run tests with a coverage report |
-| `npm run test:a11y` | Build, then run the accessibility checks (`test-a11y.mjs`) |
+Every push and Pull Request triggers our GitHub Actions pipeline (`.github/workflows/ci.yml`), which acts as a required gate before merging to `main`. 
 
-## 🔄 CI/CD
+| Stage | Command | Purpose |
+|----------|---------|---------|
+| **Lint** | `npm run lint` | Enforce code style and catch issues |
+| **Type Check** | `tsc -b` | Ensure TypeScript integrity |
+| **Test** | `npm test` | Run Vitest suite |
+| **Build** | `npm run build` | Produce production build |
 
-Every push and PR runs [`.github/workflows/ci.yml`](.github/workflows/ci.yml) — a **required check on `main`** — covering lint, type-check, unit tests, and the production build. The app deploys to Netlify ([`netlify.toml`](netlify.toml)); the landing page is served from Vercel ([`vercel.json`](vercel.json)).
-
-## 🛣️ Roadmap
-
-| Milestone | Status |
-|-----------|--------|
-| Sponsor pool dashboard — deposits, shares, live pool stats | ✅ |
-| Vendor registration, catalog, and payment history | ✅ |
-| Mentor vouching — review, submit, track, revoke | ✅ |
-| Wallet connect (Freighter) + TanStack Query data layer | ✅ |
-| Enforced CI gate (lint · type-check · test · build) | ✅ |
-| Accessibility test pass (`test:a11y`) | ✅ |
-| Live wallet-signature JWT auth (shared with Stellar-Lendify-App) | 🚧 |
-| Editable sponsor/vendor profiles · notification preferences | 🗺️ |
+The application automatically deploys to **Netlify** via `netlify.toml`, while the landing page component is served from **Vercel** via `vercel.json`.
 
 ---
 
-## Contributing
+## Helpful Links
 
-Stellar-Lendify is open source and welcomes contributors of all experience levels.
+### Documentation
+- [API Documentation (Swagger)](https://stellar-lendify-api.onrender.com/api/v1/docs)
+- [Full Protocol Docs](https://docs.page/Lendify-Onchain-Org/Stellar-Lendify-Docs)
+- [Architecture Details](context/architecture-context.md)
+- [Code Standards](context/code-standards.md)
 
-### Before you start
+### Repository Resources
+- [Progress Tracker](context/progress-tracker.md)
+- [Verification Guide](VERIFICATION.md)
 
-1. Read the `context/` folder before writing any code.
-2. Browse open issues labeled by difficulty:
+---
 
-   * good first issue
-   * medium
-   * hard
-   * core
-3. Fork the repository.
-4. Create a branch.
-5. Build your feature.
-6. Open a PR referencing the issue number.
+## Contribution Guidelines
 
-### Earn rewards for contributions
+Stellar Lendify is open source and welcomes contributors of all experience levels!
 
-Stellar Lendify is live on Grantfox, an open-source collaboration hub in the Stellar ecosystem.
+### Getting Started
 
-Every merged PR earns transparent Stellar rewards.
+1. **Read** the files in the `context/` folder before writing any code.
+2. **Browse** open issues labeled by difficulty (`good first issue`, `medium`, `hard`, `core`).
+3. **Fork** the repository and clone it locally.
+4. **Create** a feature branch: `git checkout -b feature/your-feature-name`
+5. **Build** your feature and ensure all tests/linting pass.
+6. **Open a PR** referencing the issue number.
 
-No application gate. Just build and ship.
+### Earn Rewards for Contributions
 
-#### Get started on Grantfox
+Stellar Lendify is live on **Grantfox**, an open-source collaboration hub in the Stellar ecosystem. Every merged PR earns transparent Stellar rewards. No application gate—just build and ship.
 
-Create an account:
-
-https://contribute.grantfox.xyz/join?ref=EmeditWeb
-
-Browse Stellar Lendify issues:
-
-https://contribute.grantfox.xyz/org/Lendify-Onchain-Org
+- **Create a Grantfox Account:** [Join Here](https://contribute.grantfox.xyz/join?ref=EmeditWeb)
+- **Browse Bountied Issues:** [Lendify-Onchain-Org on Grantfox](https://contribute.grantfox.xyz/org/Lendify-Onchain-Org)
 
 ---
 
 ## License
 
-Released under the [MIT License](./LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+---
+
+## Support
+
+- **Live App**: [stellar-lendify.netlify.app](https://stellar-lendify.netlify.app)
+- **Issues**: [GitHub Issues](https://github.com/Lendify-Onchain-Org/Stellar-Lendify/issues)
+
+---
+
+<p align="center">
+  Built with 💙 on Stellar
+</p>
