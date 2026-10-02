@@ -46,7 +46,7 @@ export function Navbar() {
           to="/" 
           className="flex items-center gap-2 group"
           onClick={() => setMobileOpen(false)}
-          aria-label="StepFi home"
+          aria-label="Stellar Lendify home"
         >
           <svg width="28" height="24" viewBox="0 0 28 24" aria-hidden="true">
             <rect x="0" y="18" width="6" height="6"
@@ -61,7 +61,7 @@ export function Navbar() {
           <span className="font-display font-bold text-lg
             text-text-primary group-hover:text-brand
             transition-colors">
-            StepFi
+            Stellar Lendify
           </span>
         </Link>
 
@@ -109,7 +109,7 @@ export function Navbar() {
           </button>
 
           <a
-            href="https://stepfi.vercel.app"
+            href="https://stellar-lendify.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 px-3 py-2

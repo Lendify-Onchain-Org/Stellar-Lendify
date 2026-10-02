@@ -4,7 +4,7 @@
 // environment — no source edits. See `.env.example` for the full list.
 
 export const API_BASE_URL =
-  import.meta.env?.VITE_API_BASE_URL || 'https://stepfi-api.onrender.com/api/v1'
+  import.meta.env?.VITE_API_BASE_URL || 'https://stellar-lendify-api.onrender.com/api/v1'
 
 export const STELLAR_NETWORK =
   import.meta.env?.VITE_STELLAR_NETWORK || 'TESTNET'
@@ -30,9 +30,9 @@ export const CONTRACT_IDS = {
     'CCAE72SKYX55C5L56DBEFIMFVXRUIJY6JYLBREHEWRFNOW7AX5NBIJ5B',
 }
 
-// Public program links — fixed StepFi properties, not environment-specific.
+// Public program links — fixed Stellar Lendify properties, not environment-specific.
 export const GRANTFOX_URL =
-  'https://contribute.grantfox.xyz/org/StepFi-app'
+  'https://contribute.grantfox.xyz/org/Lendify-Onchain-Org'
 
 export const GRANTFOX_JOIN_URL =
   'https://contribute.grantfox.xyz/join?ref=EmeditWeb'

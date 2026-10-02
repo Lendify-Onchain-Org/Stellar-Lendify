@@ -1,4 +1,4 @@
-# Code Standards for StepFi-Web
+# Code Standards for Stellar-Lendify
 
 ## TypeScript
 - Strict mode enabled

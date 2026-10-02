@@ -1,6 +1,6 @@
 # Smart Contracts
 
-StepFi operates through five Soroban smart contracts deployed on Stellar Testnet. Each contract has a specific role in the protocol.
+Stellar Lendify operates through five Soroban smart contracts deployed on Stellar Testnet. Each contract has a specific role in the protocol.
 
 ## Contract Addresses
 
@@ -50,8 +50,8 @@ Each contract can be verified by comparing its SHA-256 hash against the publishe
 
 ```bash
 # Clone the contracts repo
-git clone https://github.com/StepFi-app/StepFi-Contracts.git
-cd StepFi-Contracts
+git clone https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Contracts.git
+cd Stellar-Lendify-Contracts
 
 # Install Stellar CLI and build
 cargo install --locked stellar-cli

@@ -114,7 +114,7 @@ export function RoleSelect() {
           What are you here to do?
         </h1>
         <p className="text-text-muted text-lg">
-          Pick the role that best describes how you want to use StepFi.
+          Pick the role that best describes how you want to use Stellar Lendify.
           This choice is permanent for your wallet and cannot be changed later.
         </p>
       </div>

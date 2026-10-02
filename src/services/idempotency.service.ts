@@ -8,7 +8,7 @@ interface IdempotencyRecord {
   createdAt: string // ISO 8601
 }
 
-const STORAGE_KEY = 'stepfi-idempotency'
+const STORAGE_KEY = 'stellar-lendify-idempotency'
 const TTL_MS = 24 * 60 * 60 * 1000 // 24 hours
 
 function getRecords(): IdempotencyRecord[] {

@@ -24,7 +24,7 @@ const STELLAR_EXPERT_CONTRACT =
   'https://stellar.expert/explorer/testnet/contract'
 
 const VERIFICATION_MD_URL =
-  'https://github.com/StepFi-app/StepFi-Web/blob/main/VERIFICATION.md'
+  'https://github.com/Lendify-Onchain-Org/Stellar-Lendify/blob/main/VERIFICATION.md'
 
 const contractDefinitions = [
   {
@@ -352,7 +352,7 @@ export function Contracts() {
           Deployed Contracts
         </h1>
         <p className="text-text-secondary text-lg">
-          All 5 StepFi contracts are open-source and deployed on Stellar
+          All 5 Stellar Lendify contracts are open-source and deployed on Stellar
           Testnet. Verify any contract by querying its real deployed SHA-256 WASM bytecode hash directly from Soroban RPC.
         </p>
       </div>
@@ -423,7 +423,7 @@ export function Contracts() {
           {[
             {
               step: '1. Clone the contracts repo',
-              code: 'git clone https://github.com/StepFi-app/StepFi-Contracts.git\ncd StepFi-Contracts',
+              code: 'git clone https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Contracts.git\ncd Stellar-Lendify-Contracts',
             },
             {
               step: '2. Install Stellar CLI and build',
@@ -461,7 +461,7 @@ export function Contracts() {
             View VERIFICATION.md <ExternalLink size={14} />
           </a>
           <a
-            href="https://github.com/StepFi-app/StepFi-Contracts"
+            href="https://github.com/Lendify-Onchain-Org/Stellar-Lendify-Contracts"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium text-text-muted border border-border hover:text-brand hover:border-brand/30 transition-colors"

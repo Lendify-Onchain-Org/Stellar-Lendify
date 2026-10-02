@@ -1,4 +1,4 @@
-# Progress Tracker — StepFi-Web
+# Progress Tracker — Stellar-Lendify
 
 Format: date, commit hash, what changed, why.
 Update this file in every PR that changes functionality (not needed for

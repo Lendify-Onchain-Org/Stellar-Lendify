@@ -8,7 +8,7 @@ Replace the stub `StepDeposit` component in the sponsor onboarding wizard with a
 
 ## This repo is for the React web app only
 
-This app targets sponsors, vendors, and mentors. It does NOT serve learners. Learner features belong in StepFi-App.
+This app targets sponsors, vendors, and mentors. It does NOT serve learners. Learner features belong in Stellar-Lendify-App.
 
 - [x] Changes are inside `src/`
 - [x] No Rust, Soroban, or contract code

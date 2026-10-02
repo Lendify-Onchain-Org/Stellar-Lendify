@@ -26,6 +26,6 @@ export const useRoleStore = create<RoleStore>()(
       clearRole: () =>
         set({ role: null, roleSelected: false }),
     }),
-    { name: 'stepfi-role' }
+    { name: 'stellar-lendify-role' }
   )
 )

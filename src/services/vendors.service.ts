@@ -9,7 +9,7 @@ import type {
 } from '../types'
 
 /**
- * Backend DTO shapes (StepFi-API vendors module). New vendor endpoints wrap
+ * Backend DTO shapes (Stellar-Lendify-API vendors module). New vendor endpoints wrap
  * their payload in the standard { success, data, message } envelope, so we
  * unwrap `res.data.data`. Field names are mapped to the frontend view models
  * here (single place) so pages/components stay unchanged.

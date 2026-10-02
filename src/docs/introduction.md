@@ -1,10 +1,10 @@
 # Introduction
 
-StepFi is an open-source Buy Now, Pay Later (BNPL) protocol built on **Stellar Soroban**. It connects three participant groups — sponsors, vendors, and learners — through smart contracts on the Stellar blockchain.
+Stellar Lendify is an open-source Buy Now, Pay Later (BNPL) protocol built on **Stellar Soroban**. It connects three participant groups — sponsors, vendors, and learners — through smart contracts on the Stellar blockchain.
 
-## Why StepFi?
+## Why Stellar Lendify?
 
-Traditional banking excludes millions of aspiring developers in emerging markets. They lack credit history, collateral, or access to financial institutions. StepFi replaces banks with an on-chain reputation system.
+Traditional banking excludes millions of aspiring developers in emerging markets. They lack credit history, collateral, or access to financial institutions. Stellar Lendify replaces banks with an on-chain reputation system.
 
 Every on-time payment builds a learner's reputation score. That score unlocks lower interest rates and higher credit limits — all without a traditional credit check.
 
@@ -30,7 +30,7 @@ Every on-time payment builds a learner's reputation score. That score unlocks lo
                     └──────────────────┘     └──────────────┘
 ```
 
-## The StepFi Contract Suite
+## The Stellar Lendify Contract Suite
 
 | Contract | Wasm Hash | Purpose |
 |---|---|---|

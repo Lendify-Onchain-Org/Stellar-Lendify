@@ -24,13 +24,13 @@ export const useAppStore = create<AppStore>()(
           theme: state.theme === 'dark' ? 'light' : 'dark',
         })),
     }),
-    { name: 'stepfi-app' }
+    { name: 'stellar-lendify-app' }
   )
 )
 
 // Apply saved theme immediately to prevent flash before React renders
 try {
-  const raw = localStorage.getItem('stepfi-app')
+  const raw = localStorage.getItem('stellar-lendify-app')
   if (raw) {
     const parsed = JSON.parse(raw)
     if (parsed?.state?.theme === 'light') {

@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
 
-const DEFAULT_API_BASE_URL = 'https://stepfi-api.onrender.com/api/v1'
+const DEFAULT_API_BASE_URL = 'https://stellar-lendify-api.onrender.com/api/v1'
 
 async function importConfig() {
   vi.resetModules()

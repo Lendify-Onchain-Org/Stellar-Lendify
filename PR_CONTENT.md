@@ -8,7 +8,7 @@ Replace the stub `StepDeposit` component in the sponsor onboarding wizard with a
 
 This app targets sponsors, vendors, and mentors.
 It does NOT serve learners. Learner features
-belong in StepFi-App.
+belong in Stellar-Lendify-App.
 
 Before submitting, confirm your changes belong here:
 
