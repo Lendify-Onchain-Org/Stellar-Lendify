@@ -8,7 +8,6 @@
 
 Stellar Lendify is an open-source Buy Now Pay Later (BNPL) protocol on the Stellar blockchain. This repository houses the desktop-facing web application built for the sponsors, vendors, and mentors who keep the lending pool running. It provides a comprehensive interface for funding the protocol, listing products, and vouching for learners, securely interacting with Soroban smart contracts on the Stellar network.
 
-**Live Application:** [https://stellar-lendify.netlify.app](https://stellar-lendify.netlify.app)
 
 ---
 
@@ -167,7 +166,6 @@ The protocol operates through five core Soroban smart contracts deployed on the 
 
 | Resource | Link |
 |-----------|------|
-| Web App (Sponsors/Vendors) | https://stellar-lendify.netlify.app |
 | Landing Page | https://stellar-lendify.vercel.app |
 | Interactive Demo | https://stellar-lendify.vercel.app/demo |
 | Backend API | https://stellar-lendify-api.onrender.com/api/v1 |
@@ -188,7 +186,7 @@ Every push and Pull Request triggers our GitHub Actions pipeline (`.github/workf
 | **Test** | `npm test` | Run Vitest suite |
 | **Build** | `npm run build` | Produce production build |
 
-The application automatically deploys to **Netlify** via `netlify.toml`, while the landing page component is served from **Vercel** via `vercel.json`.
+The landing page component is served from **Vercel** via `vercel.json`.
 
 ---
 
@@ -236,7 +234,6 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ## Support
 
-- **Live App**: [stellar-lendify.netlify.app](https://stellar-lendify.netlify.app)
 - **Issues**: [GitHub Issues](https://github.com/Lendify-Onchain-Org/Stellar-Lendify/issues)
 
 ---
