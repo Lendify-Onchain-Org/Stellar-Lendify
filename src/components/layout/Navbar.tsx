@@ -48,16 +48,7 @@ export function Navbar() {
           onClick={() => setMobileOpen(false)}
           aria-label="Stellar Lendify home"
         >
-          <svg width="28" height="24" viewBox="0 0 28 24" aria-hidden="true">
-            <rect x="0" y="18" width="6" height="6"
-              rx="1.5" fill={colors.logo.blueDark}/>
-            <rect x="8" y="12" width="6" height="12"
-              rx="1.5" fill={colors.logo.blue}/>
-            <rect x="16" y="6" width="6" height="18"
-              rx="1.5" fill={colors.logo.greenLight}/>
-            <rect x="22" y="0" width="6" height="24"
-              rx="1.5" fill={colors.logo.green}/>
-          </svg>
+          <img src="/logo.jpg" alt="Lendify Logo" className="w-8 h-8 rounded-full object-cover" aria-hidden="true" />
           <span className="font-display font-bold text-lg
             text-text-primary group-hover:text-brand
             transition-colors">
