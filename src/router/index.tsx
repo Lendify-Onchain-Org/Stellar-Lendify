@@ -133,7 +133,9 @@ const router = createBrowserRouter([
     path: '*',
     element: page(<NotFound />),
   },
-])
+], {
+  basename: '/Stellar-Lendify/'
+})
 
 export function Router() {
   return <RouterProvider router={router} />
