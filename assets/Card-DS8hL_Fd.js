@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-Bzw2jH9X.js";import{t}from"./clsx-DB0hHKMi.js";var n=e();function r({children:e,className:r,hover:i}){return(0,n.jsx)(`div`,{className:t(`rounded-xl p-5`,`border border-border bg-surface`,i&&`hover:border-brand/30 transition-colors`,r),children:e})}export{r as t};

@@ -1,0 +1,2 @@
+import{t as e}from"./jsx-runtime-Bzw2jH9X.js";import{t}from"./chunk-OB3PAWPO-QPtWNMRt.js";import{r as n}from"./index-CEsIcD2-.js";var r=e();function i(){return(0,r.jsxs)(`section`,{className:`max-w-7xl mx-auto px-6 py-24 text-center`,children:[(0,r.jsx)(`h1`,{className:`font-display font-bold text-4xl
+        text-brand mb-4`,children:`404`}),(0,r.jsx)(`p`,{className:`text-text-secondary mb-8`,role:`alert`,children:`Page not found.`}),(0,r.jsx)(t,{to:`/`,children:(0,r.jsx)(n,{children:`Go Home`})})]})}export{i as NotFound};

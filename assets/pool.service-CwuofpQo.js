@@ -1,0 +1,1 @@
+import{t as e}from"./api-DYnRy4TK.js";var t={getPoolInfo:async()=>(await e.get(`/pool`)).data};export{t};
